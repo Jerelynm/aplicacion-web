@@ -59,6 +59,17 @@ function mensajes() {
   alert(mensajes[Math.floor(Math.random() * mensajes.length)]);
 }
 
+function toggleMusica() {
+  const audio = document.getElementById("configuration-sound");
+
+  if (audio.paused) {
+    audio.play().catch(error => {
+      alert("Error al reproducir música: " + error);
+    });
+  } else {
+    audio.pause();
+  }
+}
 
 function agregarTarea() {
   const input = document.getElementById("nuevaTarea");
