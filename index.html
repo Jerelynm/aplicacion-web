@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a la App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+  <header>
+    <center><h1 id="titulo">B I E N V E N I D O</h1></center>
+    <center><h2 id="subtitulo">APP DE JERELYN</h2></center>
+  </header>
+<button onclick="toggleContenido()">Ocultar/Mostrar Elementos</button>
+  <main>
+  <section class="acciones">
+  <button onclick="cambiarColor()">Cambia color al botón</button>
+  <button onclick="toggleTema()">Modo Claro</button>
+  <button onclick="mostrarFecha()">Mostrar Fecha de Hoy</button>
+  <button onclick="ajustarTexto('aumentar')">Aumentar Texto</button>
+  <button onclick="ajustarTexto('disminuir')">Disminuir Texto</button>
+  <button onclick="mensajes()">Mensajes Motivadores</button>
+</section>
+
+    
+    <section class="tareas">
+      <h2>Lista de Tareas</h2>
+      <input type="text" id="nuevaTarea" placeholder="Escribe una tarea">
+      <button onclick="agregarTarea()">Agregar</button>
+      <ul id="listaTareas"></ul>
+    </section>
+
+    
+    <section class="texto">
+      <h2>Caja de Texto Dinámica</h2>
+      <input type="text" id="entradaTexto" placeholder="Escribe algo">
+      <button onclick="mostrarTexto()">Mostrar Texto</button>
+      <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+      <button onclick="eliminarEstilo()">Eliminar Estilo</button>
+      <p id="textoMostrado"></p>
+    </section>
+
+    
+    <section class="fondo">
+      <h2>Fondo Dinámico</h2>
+      <button onclick="cambiarFondo()">Cambiar Fondo</button>
+      <button onclick="restaurarFondo()">Restaurar Fondo</button>
+    </section>
+
+  
+    <section class="frases">
+      <h2>Frases Aleatorias</h2>
+      <button onclick="mostrarFrase()">Mostrar Frase</button>
+      <button onclick="borrarFrase()">Borrar Frase</button>
+      <p id="fraseTexto"></p>
+    </section>
+
+   
+    <section class="hora">
+      <h2>Hora local comparada con El Vaticano</h2>
+      <p id="horaLocal"></p>
+      <p id="horaVaticano"></p>
+      <p id="diferencia"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 App de Jerelyn - Programación</p>
+  </footer>
+</body>
+</html>
